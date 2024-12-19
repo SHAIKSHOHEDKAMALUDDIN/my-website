@@ -1,0 +1,138 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+}
+
+/* Google Search Section */
+.search-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.search-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.search-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-section input[type="text"] {
+    padding: 12px;
+    font-size: 1.2em;
+    border: 2px solid #141797;
+    border-radius: 4px;
+    width: 350px;
+    margin-right: 10px;
+}
+
+.search-section button {
+    padding: 12px 20px;
+    background-color: #4285f4;
+    border: none;
+    color: rgb(138, 17, 67);
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-section button:hover {
+    background-color: #145dd3;
+}
+
+/* Links Section */
+.links {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.links h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.app-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #681616;
+    font-size: 1.2em;
+    text-align: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.app-link:hover {
+    color: #1c5dc5;
+    transform: scale(1.1);
+}
+
+.app-link span.material-icons {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #282c34;
+    color: rgb(0, 233, 250);
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .search-section form {
+        flex-direction: column;
+    }
+    .search-section input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .link-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
